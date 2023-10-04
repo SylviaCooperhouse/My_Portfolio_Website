@@ -7,9 +7,4 @@ Developed a Diamond Price Estimation and Analysis project using data from Kaggle
 
 
 
-# [Project 2]
-
-
-
-
 
