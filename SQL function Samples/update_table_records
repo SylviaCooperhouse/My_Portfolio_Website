@@ -1,0 +1,48 @@
+-- DROP FUNCTION IF EXISTS public.update_table_records();
+CREATE OR REPLACE FUNCTION public.update_table_records()
+    RETURNS event_trigger
+    LANGUAGE 'plpgsql'
+    COST 100
+    VOLATILE NOT LEAKPROOF
+AS $BODY$
+BEGIN
+  -- Check environment variable or any other condition to control execution
+  -- You can uncomment and modify this section as needed
+  -- IF current_setting('myapp.environment') <> 'production' THEN
+  --    RETURN;
+  -- END IF;
+
+  -- Insert new tables into a tracking table (e.g., 'public.reported_tables')
+  INSERT INTO public.reported_tables (schema_name, table_name)
+  SELECT n.nspname, c.relname
+  FROM pg_catalog.pg_class c
+  JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+  WHERE c.relkind IN ('r', 'v')
+  AND n.nspname NOT LIKE 'pg_%'
+  AND n.nspname <> 'information_schema'
+  AND NOT EXISTS (
+    SELECT 1 FROM public.reported_tables
+    WHERE schema_name = n.nspname AND table_name = c.relname
+  );
+
+  -- Delete old tables from the tracking table
+  DELETE FROM public.reported_tables rt
+  WHERE NOT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+    WHERE c.relkind IN ('r', 'v')
+    AND n.nspname NOT LIKE 'pg_%'
+    AND n.nspname <> 'information_schema'
+    AND n.nspname = rt.schema_name AND c.relname = rt.table_name
+  );
+END;
+$$;
+
+-- ALTER FUNCTION public.update_table_records()
+--     OWNER TO your_owner_role;
+
+-- DROP EVENT TRIGGER IF EXISTS public.reporting_tables_trigger;
+CREATE EVENT TRIGGER public.reporting_tables_trigger
+  ON ddl_command_end
+  WHEN TAG IN ('CREATE TABLE', 'DROP TABLE')
+  EXECUTE FUNCTION public.update_table_records();
