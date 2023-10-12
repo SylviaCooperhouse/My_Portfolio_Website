@@ -12,7 +12,7 @@ In this project, I conducted a comprehensive analysis of diamond pricing using a
 </table>
 
 
-# [Project 2: Sample SQL Functions]
+# [Project 2: Sample SQL Functions](https://github.com/SylviaCooperhouse/My_Portfolio_Website/tree/main/SQL%20function%20Samples)
 
 1. Function Name: public.update_table_records()
 Description: This PostgreSQL function is designed to track changes in tables within a specified PostgreSQL schema. It inserts new tables into a tracking table and deletes records for tables that no longer exist. This is a valuable tool for monitoring changes in a database schema and maintaining an up-to-date record of tables.
