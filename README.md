@@ -12,3 +12,20 @@ In this project, I conducted a comprehensive analysis of diamond pricing using a
 </table>
 
 
+# [Sample SQL Functions]
+Table Tracking Trigger Function
+
+1. Function Name: public.update_table_records()
+Description: This PostgreSQL function is designed to track changes in tables within a specified PostgreSQL schema. It inserts new tables into a tracking table and deletes records for tables that no longer exist. This is a valuable tool for monitoring changes in a database schema and maintaining an up-to-date record of tables.
+Key Features:
+Checks the environment to control execution.
+Inserts newly created tables into a tracking table (public.reported_tables).
+Deletes records for tables that have been removed from the schema.
+Ensures the function is run as an event trigger when tables are created or dropped (CREATE TABLE or DROP TABLE events).
+This function provides a valuable mechanism for keeping track of changes to database tables, which is essential for maintaining data integrity and schema management.
+User Activity Tracking Function
+
+2. Function Name: schema.track_daily_user_count
+Description: This PostgreSQL function is used to track daily user counts and user actions within a specified date range. It accepts start and end dates as parameters and operates on a user records table. For each day in the given range, it calculates and records the number of users and their actions. The results are stored in the schema.track_daily_user_count table. If any records fall outside the specified date range, they are removed. This function is designed for monitoring user activity over time.
+This versatile function can be integrated into various applications to monitor user engagement and activity trends while ensuring data accuracy.
+These descriptions provide clear and consistent information about the purpose and functionality of each PostgreSQL function.
