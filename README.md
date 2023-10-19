@@ -30,8 +30,8 @@ This versatile function can be integrated into various applications to monitor u
 These descriptions provide clear and consistent information about the purpose and functionality of each PostgreSQL function.
 
 
-# [Project 3: Sample SQL Functions](https://public.tableau.com/app/profile/sylvia.cooperhouse/vizzes)
+# [Project 3: Sample Tableau Dashboards](https://public.tableau.com/app/profile/sylvia.cooperhouse/vizzes)
 
 [**HR Analytics Dashboard**](https://public.tableau.com/shared/GHFZ7BP76?:display_count=n&:origin=viz_share_link)
-![HR Analytics Dashboard](images/Actual%20Prices%20vs.%20Predicted%20Prices%20(Random%20Forest).png)
+![HR Analytics Dashboard](images/HR%20Analytics%20Dashboard.png)
 
