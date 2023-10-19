@@ -28,3 +28,10 @@ User Activity Tracking Function
 Description: This PostgreSQL function is used to track daily user counts and user actions within a specified date range. It accepts start and end dates as parameters and operates on a user records table. For each day in the given range, it calculates and records the number of users and their actions. The results are stored in the schema.track_daily_user_count table. If any records fall outside the specified date range, they are removed. This function is designed for monitoring user activity over time.
 This versatile function can be integrated into various applications to monitor user engagement and activity trends while ensuring data accuracy.
 These descriptions provide clear and consistent information about the purpose and functionality of each PostgreSQL function.
+
+
+# [Project 3: Sample SQL Functions](https://public.tableau.com/app/profile/sylvia.cooperhouse/vizzes)
+
+[**HR Analytics Dashboard**](https://public.tableau.com/shared/GHFZ7BP76?:display_count=n&:origin=viz_share_link)
+![HR Analytics Dashboard](images/Actual%20Prices%20vs.%20Predicted%20Prices%20(Random%20Forest).png)
+
