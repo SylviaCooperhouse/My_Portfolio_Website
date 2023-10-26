@@ -35,3 +35,6 @@ These descriptions provide clear and consistent information about the purpose an
 [**HR Analytics Dashboard**](https://public.tableau.com/shared/GHFZ7BP76?:display_count=n&:origin=viz_share_link)
 ![HR Analytics Dashboard](images/HR%20Analytics%20Dashboard.png)
 
+
+# [Project 4: Puppy Discord Bot](https://github.com/SylviaCooperhouse/Mocha-Bot)
+
