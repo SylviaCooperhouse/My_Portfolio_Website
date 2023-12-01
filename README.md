@@ -37,4 +37,5 @@ These descriptions provide clear and consistent information about the purpose an
 
 
 # [Project 4: Puppy Discord Bot](https://github.com/SylviaCooperhouse/Mocha-Bot)
+A fun doggie personality discord bot to chat with
 
