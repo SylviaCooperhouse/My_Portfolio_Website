@@ -39,3 +39,8 @@ These descriptions provide clear and consistent information about the purpose an
 # [Project 4: Puppy Discord Bot](https://github.com/SylviaCooperhouse/Mocha-Bot)
 A fun doggie personality discord bot to chat with
 
+
+# [Project 5: Investment Dashboard (In Progress)](https://github.com/SylviaCooperhouse/investment)
+
+A Python-based platform hosted on AWS, designed to monitor and analyze portfolio performance and risk exposure. It integrates stock and cryptocurrency data, calculates Value at Risk (VaR) using multiple methodologies (Historical, Parametric, Monte Carlo), and visualizes insights through an interactive Dash dashboard. Key features include automated data fetching, portfolio breakdowns, risk metrics, and alerts for significant changes. The project leverages AWS services and PostgreSQL for centralized data management, enabling data-driven investment decision support.
+
