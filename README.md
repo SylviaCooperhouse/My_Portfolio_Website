@@ -1,7 +1,3 @@
-# Sylvia's Data Science Project Portfolio
-
----
-
 ## [Project 1: SQL Mastery Showcase (PostgreSQL, MySQL, SQL Server)](https://github.com/SylviaCooperhouse/sql-showcase)
 
 A comprehensive collection of SQL queries, database designs, and optimizations covering all aspects of SQL mastery. This repository serves as both a **learning tool** and a **portfolio showcase** for advanced SQL capabilities. Key features include:
