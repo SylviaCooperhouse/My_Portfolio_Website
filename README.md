@@ -17,7 +17,7 @@ This project demonstrates proficiency in designing, querying, and optimizing dat
 A Python-based platform hosted on AWS, designed to monitor and analyze portfolio performance and risk exposure. It integrates stock and cryptocurrency data, calculates Value at Risk (VaR) using multiple methodologies (Historical, Parametric, Monte Carlo), and visualizes insights through an interactive Dash dashboard. Key features include:
 
 - Automated data fetching and daily updates.
-- Portfolio breakdowns, risk metrics, and alerts for significant changes.
+- Portfolio breakdowns, risk metrics.
 - Centralized data management leveraging AWS services and PostgreSQL.
 
 This project provides data-driven investment decision support through advanced risk modeling and real-time analysis.
