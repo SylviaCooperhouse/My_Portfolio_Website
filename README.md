@@ -12,7 +12,7 @@ This project demonstrates proficiency in designing, querying, and optimizing dat
 
 ---
 
-## [Project 2: Investment Dashboard (Python, Dash, AWS, PostgreSQL)](https://github.com/SylviaCooperhouse/investment)
+## [Project 2: Investment Dashboard (Python, AWS, PostgreSQL)](https://github.com/SylviaCooperhouse/investment)
 
 A Python-based platform hosted on AWS, designed to monitor and analyze portfolio performance and risk exposure. It integrates stock and cryptocurrency data, calculates Value at Risk (VaR) using multiple methodologies (Historical, Parametric, Monte Carlo), and visualizes insights through an interactive Dash dashboard. Key features include:
 
